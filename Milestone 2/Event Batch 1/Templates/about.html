@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}About - Event Management AI{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold text-primary">
+            <i class="bi bi-calendar-event"></i> About Our Project
+        </h1>
+        <p class="lead text-muted mt-3">
+            Revolutionizing event planning with Artificial Intelligence
+        </p>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h2 class="fw-bold text-success">What We Do</h2>
+            <p>
+                Our Event Management AI project simplifies the process of organizing
+                conferences, weddings, concerts, and corporate events.
+                With intelligent scheduling, resource allocation, and real-time insights,
+                we make event planning effortless.
+            </p>
+
+            <h2 class="fw-bold text-success mt-4">Why Choose Us?</h2>
+            <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill text-primary"></i> Smart scheduling powered by AI</li>
+                <li><i class="bi bi-check-circle-fill text-primary"></i> Automated resource management</li>
+                <li><i class="bi bi-check-circle-fill text-primary"></i> Real-time analytics and insights</li>
+                <li><i class="bi bi-check-circle-fill text-primary"></i> Seamless user experience</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="{{ url_for('assistant_page') }}" class="btn btn-lg btn-primary">
+            <i class="bi bi-robot"></i> Meet the Assistant
+        </a>
+    </div>
+</div>
+{% endblock %}
